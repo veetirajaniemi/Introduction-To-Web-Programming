@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+</head>
+<body>
+    <form>
+        <label for="area">Area:</label>
+        <input id="input-area" type="text">
+        <button id="submit-data">Submit area!</button>
+    </form>
+    <button id="add-data">Add estimated data point!</button>
+    <br>
+    <p id="curArea">Current area:</p>
+    <div id="chart"></div>
+    <a id="navigation">View birth and death charts</a>
+    <script>  
+        let link = document.getElementById("navigation")
+        link.addEventListener("click",() => {
+            let curArea = document.getElementById("curArea")
+            let areaName = curArea.innerText
+            link.href = `newchart.html?areaName=${encodeURIComponent(areaName)}`
+        })
+    </script>
+</body>
+</html>

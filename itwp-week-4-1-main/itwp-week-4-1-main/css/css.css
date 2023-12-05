@@ -1,0 +1,58 @@
+.main-menu {
+    font-size: 2em;
+    padding: 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin: 5px;
+    background-color: #c0c0c0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000099;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+    color: #666699;
+}
+
+@media (min-width: 1100px) {
+    body {
+        max-width: 1050px;
+        background-color: #99cc99;
+        margin: auto;
+    }
+
+    .main-menu ul {
+        display: flex;
+    }
+
+    main {
+        display: flex;
+    }
+
+    main section {
+        max-width: 700px;
+    }
+    
+    main aside {
+        max-width: 300px;
+    }
+}
+
+.main-menu ul li{
+    padding: 20px;
+}
+
+@media (pointer: fine) { 
+    .main-menu ul li{
+        padding: 5px;
+    }
+}

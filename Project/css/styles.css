@@ -1,0 +1,76 @@
+/* Veeti Rajaniemi 161023 */
+
+/* Some design ideas from:
+    https://codepen.io/vedadesigns/pen/GPxYZg
+    https://copy-paste-css.com/                  */
+
+    
+#map {
+    height: 100vh;
+}
+
+#field {
+    margin-bottom:1%;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: aliceblue;
+}
+
+#no-bullet {
+    list-style: none;
+    margin: auto;
+}
+
+button {
+    
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #e282d5;
+    color: white;
+    padding: 0 20px;
+}
+
+#submit-year {
+    margin-top: 2%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+    align-items: center;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+    
+h1:after, h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #e282d5;
+    border-top: 1px solid #e282d5;
+    height: 5px;
+    background-color:aliceblue;
+    
+
+}
+
+
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        max-width: fit-content;
+        min-width: auto;
+    }
+
+}
+
+
